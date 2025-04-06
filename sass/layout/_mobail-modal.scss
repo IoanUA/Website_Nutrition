@@ -1,0 +1,102 @@
+.mob-menu_open {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--beige-color);
+  border: none;
+  color: black;
+  transition: color 0.3s ease;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    color: var(--green-color); // цвет линий при наведении
+  }
+  :active {
+    color: blue; // цвет линий при нажатии (по желанию)
+  }
+}
+
+.mobail-modal {
+  overflow: hidden;
+  padding: 20px 15px 20px 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 810px;
+
+  background-color: var(--green-color);
+  z-index: 3;
+}
+.modal__logo {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--beige-color);
+  :visited {
+    color: var(--beige-color);
+  }
+}
+.mobal__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.mob-menu_close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.modal__list {
+  list-style: none;
+  margin-bottom: 90px;
+}
+
+.modal__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc; // или любой другой цвет
+
+  a {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: var(--beige-color);
+  }
+
+  .modal__num {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--beige-color);
+  }
+}
+
+.modal_decor__box {
+  width: 621px;
+  height: 621px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-68%, 17%);
+  border-radius: 50%;
+  background-color: var(--beige-color);
+  mix-blend-mode: screen; // Форовый режим
+}
+.hidden {
+  display: none;
+}

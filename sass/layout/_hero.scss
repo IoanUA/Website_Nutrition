@@ -1,0 +1,61 @@
+.hero {
+  // position: relative;
+  background-color: var(--beige-color);
+  overflow: hidden;
+}
+.hero__info {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  // position: relative;
+  // overflow: hidden;
+}
+
+.hero__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+
+.heri_epi {
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 50px;
+}
+
+.hero__list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+  :first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.hero_photo__box {
+  position: relative;
+}
+.hero__photo {
+  display: block;
+  width: 230px;
+  height: 315px;
+  z-index: 1; // Increase z-index to ensure visibility
+  position: relative; // Ensure it is positioned correctly
+}
+.decor__box {
+  position: absolute;
+  transform: translate(-20%, -50%);
+  left: -100px;
+  overflow: hidden;
+  width: 621px;
+  height: 621px;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  z-index: 0; // Ensure it is behind the photo
+}

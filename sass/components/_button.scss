@@ -1,0 +1,39 @@
+.hero__btn {
+  display: block;
+  margin: 0 auto 47px auto;
+  width: 231px;
+  height: 56px;
+
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--beige-color);
+  background-color: var(--green-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: var(--green-color);
+    background-color: var(--beige-color); // цвет линий при наведении
+  }
+}
+
+.modal__btn {
+  display: block;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--green-color);
+  width: 267px;
+  height: 51px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  border-width: 1px;
+  background-color: var(--beige-color);
+  margin-bottom: 90px;
+}

@@ -1,0 +1,29 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: var(--beige-color);
+}
+.header__box {
+  // position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--black-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
+  :visited {
+    color: var(--black-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--green-color); // цвет линий при наведении
+  }
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__box container">
+        <div class="header__nav">
+          <a class="header__logo" href="">Dr. Juliya Yarosh</a>
+          <button class="mob-menu_open" type="button">
+            <svg
+              class="menu-open-svg"
+              width="39"
+              height="14"
+              viewBox="0 0 39 16"
+            >
+              <line y1="1" x2="39" y2="1" stroke="currentColor" />
+              <line x1="5" y1="8" x2="34" y2="8" stroke="currentColor" />
+              <line y1="15" x2="39" y2="15" stroke="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <div class="mobail-modal hidden container">
+        <div class="mobal__top">
+          <a class="modal__logo" href="">Dr. Juliya Yarosh</a>
+          <button class="mob-menu_close" type="button">
+            <p class="close">X</p>
+          </button>
+        </div>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <a href="">Обо мне</a>
+            <span class="modal__num">01</span>
+          </li>
+          <li class="modal__item">
+            <a href="">Консультация</a>
+            <span class="modal__num">02</span>
+          </li>
+          <li class="modal__item">
+            <a href="">Гайды</a>
+            <span class="modal__num">03</span>
+          </li>
+        </ul>
+        <button class="modal__btn" type="button">Записаться</button>
+        <img src="./images/hero__x1.png" alt="" />
+        <div class="modal_decor__box"></div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__info">
+          <h1 class="hero__title">Dr.Juliya Yarosh</h1>
+          <h2 class="heri_epi">Врач интегративной медицины</h2>
+          <ul class="hero__list">
+            <li class="hero__info">
+              <p class="">
+                Здоровье — это не отсутствие симптомов, а баланс биохимических
+                процессов. Витамины, минералы и другие нутриенты — не просто
+                добавки, а ключи к саморегуляции организма.
+              </p>
+            </li>
+            <li class="hero__info">
+              <p class="">
+                Настроенный организм — это энергия, ясность и качества жизни.
+              </p>
+            </li>
+          </ul>
+
+          <button class="hero__btn" type="button">Записаться</button>
+        </div>
+        <div class="hero_photo__box">
+          <img
+            class="hero__photo"
+            src="./images/hero__x2.png"
+            alt="фото врача"
+          />
+          <div class="decor__box"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/open-mob-menu.js"></script>
+</html>
