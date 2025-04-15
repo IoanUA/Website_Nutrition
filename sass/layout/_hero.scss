@@ -58,7 +58,7 @@
   }
   @media screen and (min-width: 1440px) {
     font-size: 30px;
-    margin-bottom: 148px;
+    margin-bottom: 60px;
   }
 }
 .hero__list {
@@ -108,9 +108,8 @@
   background-color: var(--green-color);
   z-index: -1;
 
-  top: 0;
+  top: 140px;
   right: 0;
-  //   right: 10px;
   @media screen and (min-width: 768px) {
     width: 700px;
     height: 700px;

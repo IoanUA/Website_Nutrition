@@ -22,14 +22,6 @@
   }
 }
 
-.mob-menu_close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33px;
-  height: 33px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
 .head_connect__btn {
   border: 1px solid var(--black-color);
   padding: 5px 15px;
@@ -73,8 +65,8 @@
   }
   @media screen and (min-width: 768px) {
     margin: 0px;
-    width: 320px;
-    height: 68px;
+    width: 250px;
+    height: 50px;
   }
   @media screen and (min-width: 1440px) {
     width: 320px;

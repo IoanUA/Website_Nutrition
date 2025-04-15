@@ -1,8 +1,10 @@
 .mobail-modal {
   overflow: hidden;
+  // position: absolute;
   padding: 20px 15px 20px 15px;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 810px;
   background-image: url(../../images/background__img.png);
@@ -12,25 +14,58 @@
   background-color: var(--green-color);
   z-index: 3;
 }
+.modal__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
 .modal__logo {
+  margin-right: auto;
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--beige-color);
+  transition: color 0.3s ease;
+  &:hover,
+  &:focus {
+    color: var(--black-color);
+  }
   :visited {
     color: var(--beige-color);
   }
 }
-.mobal__top {
+.btn-menu_close {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-image: url(../../images/background__img.png);
+  background-color: var(--green-color);
+  color: var(--beige-color);
+  border: 1px solid var(--beige-color);
+  border-radius: 10%;
+  transition: color 0.3s ease;
+  &:hover,
+  &:focus {
+    color: var(--black-color);
+    border-color: 1px solid var(--black-color);
+  }
 }
-
+.icon-close {
+  width: 30px;
+  height: 30px;
+  transition: stroke 0.3s ease;
+  stroke: currentColor;
+}
 .modal__list {
   list-style: none;
   margin-bottom: 90px;
+  .modal__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
 }
 
 .modal__item {
@@ -38,8 +73,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
-  padding: 12px 0;
-  border-bottom: 1px solid #ccc; // или любой другой цвет
+  border-bottom: 1px solid var(--beige-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
+  color: currentColor;
+  background-color: transparent;
 
   a {
     font-weight: 400;
@@ -48,6 +85,7 @@
     letter-spacing: 0%;
     text-decoration: none;
     color: var(--beige-color);
+    transition: color 0.3s ease;
   }
 
   .modal__num {
@@ -56,6 +94,22 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--beige-color);
+    transition: color 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--black-color);
+    // background-color: var(--beige-color);
+    border-bottom: 1px solid var(--black-color);
+
+    a {
+      color: var(--black-color);
+    }
+
+    .modal__num {
+      color: var(--black-color);
+    }
   }
 }
 

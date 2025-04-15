@@ -2,7 +2,7 @@
 
 
 const openBtn = document.querySelector('.mob-menu_open');
-const closeBtn = document.querySelector('.mob-menu_close');
+const closeBtn = document.querySelector('.btn-menu_close');
 const modal = document.querySelector('.mobail-modal');
 
 // Открытие модального окна
