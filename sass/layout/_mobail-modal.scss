@@ -1,24 +1,3 @@
-.mob-menu_open {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--beige-color);
-  border: none;
-  color: black;
-  transition: color 0.3s ease;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  &:hover,
-  &:focus {
-    color: var(--green-color); // цвет линий при наведении
-  }
-  :active {
-    color: blue; // цвет линий при нажатии (по желанию)
-  }
-}
-
 .mobail-modal {
   overflow: hidden;
   padding: 20px 15px 20px 15px;
@@ -26,7 +5,10 @@
   top: 0;
   width: 100%;
   height: 810px;
+  background-image: url(../../images/background__img.png);
 
+  background-repeat: repeat;
+  background-size: auto;
   background-color: var(--green-color);
   z-index: 3;
 }
@@ -44,14 +26,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
-}
-.mob-menu_close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33px;
-  height: 33px;
-  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .modal__list {
@@ -92,7 +66,7 @@
   top: 50%;
   left: 50%;
   z-index: -1;
-  transform: translate(-68%, 17%);
+  transform: translate(-71%, 17%);
   border-radius: 50%;
   background-color: var(--beige-color);
   mix-blend-mode: screen; // Форовый режим

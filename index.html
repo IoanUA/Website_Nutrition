@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrition</title>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
@@ -21,8 +22,28 @@
     <header class="header">
       <section class="header__box container">
         <div class="header__nav">
-          <a class="header__logo" href="">Dr. Juliya Yarosh</a>
-          <button class="mob-menu_open" type="button">
+          <a class="header__logo" href="#">Dr. Juliya Yarosh</a>
+          <nav class="head_nav__box">
+            <ul class="head_nav__list">
+              <li class="head_nav__item">
+                <a href="#" class="head_nav__link">Обо мне</a>
+              </li>
+              <li class="head_nav__item">
+                <a href="#" class="head_nav__link">Консультация</a>
+              </li>
+              <li class="head_nav__item">
+                <a href="#" class="head_nav__link">Гайды</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="head_connect__btn" type="button">Записаться</button>
+
+          <button
+            class="mob-menu_open"
+            type="button"
+            aria-label="Открыть мобильное меню"
+          >
             <svg
               class="menu-open-svg"
               width="39"
@@ -35,65 +56,97 @@
             </svg>
           </button>
         </div>
-      </section>
-      <div class="mobail-modal hidden container">
-        <div class="mobal__top">
-          <a class="modal__logo" href="">Dr. Juliya Yarosh</a>
-          <button class="mob-menu_close" type="button">
-            <p class="close">X</p>
-          </button>
+
+        <div class="mobail-modal hidden container">
+          <div class="modal__top">
+            <a class="modal__logo" href="#">Dr. Juliya Yarosh</a>
+            <button
+              class="mob-menu_close"
+              type="button"
+              aria-label="Закрыть меню"
+            >
+              <span class="close">×</span>
+            </button>
+          </div>
+
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a href="#">Обо мне</a>
+              <span class="modal__num">01</span>
+            </li>
+            <li class="modal__item">
+              <a href="#">Консультация</a>
+              <span class="modal__num">02</span>
+            </li>
+            <li class="modal__item">
+              <a href="#">Гайды</a>
+              <span class="modal__num">03</span>
+            </li>
+          </ul>
+
+          <button class="modal__btn" type="button">Записаться</button>
+          <div class="modal_photo__box">
+            <div class="modal_decor__box"></div>
+            <img src="./images/hero__x1.png" alt="декоративное изображение" />
+          </div>
         </div>
-        <ul class="modal__list">
-          <li class="modal__item">
-            <a href="">Обо мне</a>
-            <span class="modal__num">01</span>
-          </li>
-          <li class="modal__item">
-            <a href="">Консультация</a>
-            <span class="modal__num">02</span>
-          </li>
-          <li class="modal__item">
-            <a href="">Гайды</a>
-            <span class="modal__num">03</span>
-          </li>
-        </ul>
-        <button class="modal__btn" type="button">Записаться</button>
-        <img src="./images/hero__x1.png" alt="" />
-        <div class="modal_decor__box"></div>
-      </div>
+      </section>
     </header>
+
     <section class="hero">
-      <div class="container">
+      <div class="container hero_box__desk">
         <div class="hero__info">
           <h1 class="hero__title">Dr.Juliya Yarosh</h1>
-          <h2 class="heri_epi">Врач интегративной медицины</h2>
+          <h2 class="hero_epi">Врач интегративной медицины</h2>
+
           <ul class="hero__list">
-            <li class="hero__info">
-              <p class="">
-                Здоровье — это не отсутствие симптомов, а баланс биохимических
+            <li class="hero__item">
+              <p class="hero__text">
+                Здоровье — это не отсутствие симптомов, а баланс биохимических
                 процессов. Витамины, минералы и другие нутриенты — не просто
-                добавки, а ключи к саморегуляции организма.
+                добавки, а ключи к саморегуляции организма.
               </p>
             </li>
-            <li class="hero__info">
-              <p class="">
-                Настроенный организм — это энергия, ясность и качества жизни.
+            <li class="hero__item">
+              <p class="hero__text">
+                Настроенный организм — это энергия, ясность и качество жизни.
               </p>
             </li>
           </ul>
 
           <button class="hero__btn" type="button">Записаться</button>
         </div>
+
         <div class="hero_photo__box">
-          <img
-            class="hero__photo"
-            src="./images/hero__x2.png"
-            alt="фото врача"
-          />
-          <div class="decor__box"></div>
+          <div class="hero_decor__box"></div>
+          <picture class="hero__photo">
+            <!-- Десктоп: от 1024px -->
+            <source
+              srcset="./images/hero__x2.png"
+              media="(min-width: 1024px)"
+            />
+
+            <!-- Планшет: от 768px -->
+            <source srcset="./images/hero__x2.png" media="(min-width: 768px)" />
+
+            <!-- Мобильный по умолчанию -->
+            <img src="./images/hero__x2.png" alt="фото врача" />
+          </picture>
         </div>
       </div>
     </section>
+    <section class="hero-summary">
+      <div class="container">
+        <div class="hero-summary__box">
+          <p class="hero-summary__text">
+            Функциональная биохимия — это язык, на котором говорит ваше тело.
+            Интегративная медицина помогает его понять, восстановить баланс
+            нутриентов и запустить естественные механизмы здоровья.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/open-mob-menu.js"></script>
   </body>
-  <script src="./js/open-mob-menu.js"></script>
 </html>

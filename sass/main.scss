@@ -1,10 +1,9 @@
-
+@import "./utils/vars";
 @import "./layout/header";
-@import "./base/reset"; 
+@import "./base/reset";
 @import "./components/button";
 @import "./layout/hero";
-
-@import "./utils/vars";
+@import "./utils/mixin";
 @import "./utils/container";
 @import "./layout/hero";
-@import "./layout/mobail-modal"
+@import "./layout/mobail-modal";

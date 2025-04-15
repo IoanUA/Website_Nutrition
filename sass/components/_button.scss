@@ -1,22 +1,84 @@
+.mob-menu_open {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../images/background__img.png);
+  background-color: var(--beige-color);
+  background-repeat: repeat;
+  background-size: auto;
+  border: none;
+  color: var(--black-color);
+  transition: color 0.3s ease;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    color: var(--green-color);
+  }
+  :active {
+    color: blue; // цвет линий при нажатии (по желанию)
+  }
+}
+
+.mob-menu_close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.head_connect__btn {
+  border: 1px solid var(--black-color);
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-image: url(../../images/background__img.png);
+  background-color: var(--beige-color);
+  color: var(--black-color);
+  &:hover,
+  &:focus {
+    color: var(--green-color); // цвет линий при наведении
+    border: solid 1px var(--green-color);
+  }
+  @media screen and (max-width: 768px) {
+    display: none; // цвет линий при наведении
+  }
+}
 .hero__btn {
   display: block;
   margin: 0 auto 47px auto;
   width: 231px;
   height: 56px;
-
-  font-family: "Inter Tight";
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--beige-color);
+  background-image: url(../../images/background__img.png);
+  background-repeat: repeat;
+  background-size: auto;
   background-color: var(--green-color);
   transition: color 0.3s ease, background-color 0.3s ease;
+  border: 0;
 
   &:hover,
   &:focus {
-    color: var(--green-color);
-    background-color: var(--beige-color); // цвет линий при наведении
+    // color: var(--green-color);
+    background-color: var(--black-color); // цвет линий при наведении
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0px;
+    width: 320px;
+    height: 68px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 320px;
+    height: 68px;
   }
 }
 
@@ -33,7 +95,16 @@
   padding-right: 24px;
   padding-bottom: 10px;
   padding-left: 24px;
-  border-width: 1px;
+  background-image: url(../../images/background__img.png);
   background-color: var(--beige-color);
+  background-repeat: repeat;
+  background-size: auto;
   margin-bottom: 90px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border: 0;
+  &:hover,
+  &:focus {
+    color: var(--beige-color);
+    background-color: var(--black-color); // цвет линий при наведении
+  }
 }

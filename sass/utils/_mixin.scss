@@ -1,0 +1,19 @@
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+// 📲 Планшеты (768px до 1023px)
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+// 💻 Десктоп (от 1440px и выше)
+@mixin desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
