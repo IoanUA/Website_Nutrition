@@ -1,0 +1,108 @@
+.about_mee__section {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-image: url(../../images/background__img.png);
+  background-color: var(--beige-color);
+  @media screen and (min-width: 1440px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+.about_mee_decor {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.about_span {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 34px;
+  margin-bottom: 7px;
+}
+.mee_span {
+  font-weight: 250;
+  font-size: 40px;
+  line-height: 34px;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+.about_info__box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: 1440px) {
+      padding-left: 85px;
+    }
+  }
+}
+.about_list {
+  li:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    li:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    li:not(:last-child) {
+      margin-bottom: 50px;
+    }
+    margin-right: 20px;
+  }
+}
+// .about-list__item {
+//   //   margin-bottom: 30px;
+// }
+.about-list__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 1%;
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 21px;
+    // letter-spacing: 0%;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 0%;
+  }
+}
+
+.about-list__highlight {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 1%;
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0%;
+  }
+}
+.about_photo__mob {
+  display: block;
+  margin: 30px auto;
+  width: 210px;
+  height: 290px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.about_photo__desk {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 20px;
+    width: 300px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 431px;
+    height: 596px;
+  }
+}

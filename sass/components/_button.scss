@@ -100,3 +100,25 @@
     background-color: var(--black-color); // цвет линий при наведении
   }
 }
+
+.consult__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 173px;
+  height: 33px;
+  border: 1px solid var(--black-color);
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  background-image: url(../../images/background__img.png);
+  background-color: var(--beige-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
+  &:hover,
+  &:focus {
+    color: var(--beige-color); // цвет линий при наведении
+    background-color: var(--black-color); // цвет линий при наведении
+  }
+}

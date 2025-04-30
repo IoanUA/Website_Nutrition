@@ -1,0 +1,110 @@
+.consult {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-image: url("../../images/background__img.png");
+  background-color: var(--beige-color);
+}
+.consult__decor {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.consult__word--first {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 34px;
+  margin-bottom: 7px;
+}
+.consult__word--second {
+  font-weight: 250;
+  font-size: 40px;
+  line-height: 34px;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.consult__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+.consult__item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px 37px;
+  width: 360px;
+  height: 287px;
+  border: 1px solid var(--black-color);
+  @media screen and (min-width: 1440px) {
+    width: 420px;
+    height: 420px;
+  }
+}
+.cons_item__green {
+  @media screen and (max-width: 768px) {
+    background-image: url("../../images/background__img.png");
+    background-color: var(--green-color);
+    color: var(--beige-color);
+  }
+}
+.consult_item__desk {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    padding: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    // background-image: url("../../images/consult_img_3.png");
+  }
+}
+
+// .cons_item__green {
+//   @media screen and (max-width: 768px) {
+//     background-image: url("../../images/background__img.png");
+//     background-color: var(--green-color);
+//     color: var(--beige-color);
+//   }
+// }
+
+// .cons_item__white {
+//   @media screen and (min-width: 768px) {
+//     background-image: url("../../images/background__img.png");
+//     background-color: var(--beige-color);
+//   }
+// }
+
+.consult__img {
+  object-fit: cover;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.consult__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: auto;
+}
+.consult__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: auto;
+
+  //   margin-bottom: 30px;
+}
+.cons_upgrade {
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+}

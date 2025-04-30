@@ -136,15 +136,23 @@
   @media screen and (min-width: 1440px) {
     width: 487.186px;
     height: 690px;
-    top: 85px;
+    top: 0px;
     left: -31px;
   }
 }
 .hero-summary {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: var(--green-color);
   background-image: url(../../images/background__img.png);
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 .hero-summary__text {
   font-weight: 300;
@@ -154,11 +162,13 @@
   letter-spacing: 0%;
   color: var(--beige-color);
   @media screen and (min-width: 768px) {
+    margin-left: 50px;
     font-size: 20px;
     line-height: 29px;
   }
   @media screen and (min-width: 1440px) {
-    font-style: italic;
+    margin-left: 168px;
+
     font-size: 40px;
     line-height: 54px;
   }
