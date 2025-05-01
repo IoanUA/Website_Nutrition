@@ -267,6 +267,11 @@ button {
   color: var(--beige-color);
   background-color: var(--black-color);
 }
+@media screen and (min-width: 768px) {
+  .consult__button {
+    display: none;
+  }
+}
 
 .hero {
   z-index: 0;
@@ -365,7 +370,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero__text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -605,7 +610,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero__text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1036,8 +1041,16 @@ button {
   height: 287px;
   border: 1px solid var(--black-color);
 }
+@media screen and (min-width: 768px) {
+  .consult__item {
+    padding: 10px 5px;
+    width: 232px;
+    height: 233px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .consult__item {
+    padding: 40px 5px 40px;
     width: 420px;
     height: 420px;
   }
@@ -1054,7 +1067,7 @@ button {
 .consult_item__desk {
   display: none;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .consult_item__desk {
     padding: 0;
     display: block;
@@ -1079,6 +1092,18 @@ button {
   text-align: center;
   margin-bottom: auto;
 }
+@media screen and (min-width: 768px) {
+  .consult__title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .consult__title {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
 
 .consult__text {
   font-weight: 300;
@@ -1087,11 +1112,87 @@ button {
   text-align: center;
   margin-bottom: auto;
 }
+@media screen and (min-width: 768px) {
+  .consult__text {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .consult__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 
 .cons_upgrade {
   font-weight: 400;
   line-height: 17px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cons_upgrade {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cons_upgrade {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+
+.consult_more__desk {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .consult_more__desk {
+    display: block;
+    margin-left: auto;
+    gap: 0.5rem;
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .consult_more__desk {
+    font-size: 18px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .consult_more__desk:hover, .consult_more__desk:focus {
+    transition: transform 0.3s ease;
+    transform: translateX(4px);
+    color: var(--green-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .consult_more__icon-arrow {
+    width: 67px;
+    height: 10px;
+    fill: currentColor;
+    stroke: currentColor;
+    transition: transform 0.3s ease;
+  }
+  .consult_more__icon-arrow:hover, .consult_more__icon-arrow:focus {
+    transform: translateX(4px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .consult_more__icon-arrow {
+    width: 67px;
+    height: 10px;
+    fill: currentColor;
+    stroke: currentColor;
+    transition: transform 0.3s ease;
+  }
+  .consult_more__icon-arrow:hover, .consult_more__icon-arrow:focus {
+    transform: translateX(4px);
+  }
 }
 
 .mobail-modal {

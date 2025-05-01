@@ -41,7 +41,13 @@
   width: 360px;
   height: 287px;
   border: 1px solid var(--black-color);
+  @media screen and (min-width: 768px) {
+    padding: 10px 5px;
+    width: 232px;
+    height: 233px;
+  }
   @media screen and (min-width: 1440px) {
+    padding: 40px 5px 40px;
     width: 420px;
     height: 420px;
   }
@@ -55,15 +61,23 @@
 }
 .consult_item__desk {
   display: none;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     padding: 0;
     display: block;
     position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    // background-image: url("../../images/consult_img_3.png");
   }
+  // @media screen and (min-width: 1440px) {
+  //   padding: 0;
+  //   display: block;
+  //   position: relative;
+  //   overflow: hidden;
+  //   align-items: center;
+  //   justify-content: center;
+  //   // background-image: url("../../images/consult_img_3.png");
+  // }
 }
 
 // .cons_item__green {
@@ -93,6 +107,14 @@
   line-height: 34px;
   text-align: center;
   margin-bottom: auto;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
 .consult__text {
   font-weight: 300;
@@ -100,6 +122,13 @@
   line-height: 20px;
   text-align: center;
   margin-bottom: auto;
+  @media screen and (min-width: 768px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   //   margin-bottom: 30px;
 }
@@ -107,4 +136,60 @@
   font-weight: 400;
   line-height: 17px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+
+.consult_more__desk {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    gap: 0.5rem;
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    @media screen and (min-width: 1440px) {
+      font-size: 18px;
+      font-size: 18px;
+      line-height: 34px;
+    }
+    &:hover,
+    &:focus {
+      transition: transform 0.3s ease;
+      transform: translateX(4px);
+      color: var(--green-color);
+    }
+  }
+}
+
+.consult_more__icon-arrow {
+  @media screen and (min-width: 768px) {
+    width: 67px;
+    height: 10px;
+    fill: currentColor;
+    stroke: currentColor;
+    transition: transform 0.3s ease;
+    &:hover,
+    &:focus {
+      transform: translateX(4px);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    width: 67px;
+    height: 10px;
+    fill: currentColor;
+    stroke: currentColor;
+    transition: transform 0.3s ease;
+    &:hover,
+    &:focus {
+      transform: translateX(4px);
+    }
+  }
 }
