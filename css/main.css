@@ -1202,7 +1202,12 @@ button {
   padding-bottom: 46px;
   background-image: url("../../images/background__img.png");
   background-color: var(--green-color);
-  margin-bottom: 35px;
+}
+@media screen and (min-width: 768px) {
+  .facts {
+    padding-top: 59px;
+    padding-bottom: 100px;
+  }
 }
 
 .facts__decor {
@@ -1238,6 +1243,37 @@ button {
   line-height: 34px;
   color: var(--beige-color);
 }
+@media screen and (min-width: 768px) {
+  .facts__subtitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .facts__subtitle {
+    font-size: 34px;
+  }
+}
+
+.facts__index {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .facts__index {
+    display: block;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 34px;
+    color: var(--beige-color);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .facts__index {
+    font-size: 50px;
+    margin-left: auto;
+  }
+}
 
 .facts__text {
   font-weight: 300;
@@ -1245,7 +1281,6 @@ button {
   line-height: 22px;
   color: var(--beige-color);
 }
-
 .facts__text-part {
   display: flex;
   margin-bottom: 20px;
@@ -1268,7 +1303,8 @@ button {
 @media screen and (min-width: 768px) {
   .facts__item {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1440px) {
@@ -1295,8 +1331,14 @@ button {
   transition: max-height 1s ease, opacity 0.5s ease;
 }
 .facts__item:hover .facts__text {
+  margin-top: 30px;
   max-height: 1000px;
   opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .facts__item:hover .facts__text {
+    max-width: 75%;
+  }
 }
 
 .mobail-modal {
