@@ -31,6 +31,9 @@
   line-height: 34px;
   color: var(--beige-color);
   bottom: 35px;
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+  }
 }
 .facts__subtitle {
   font-weight: 500;

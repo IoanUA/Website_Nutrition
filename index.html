@@ -87,6 +87,7 @@
           </ul>
 
           <button class="modal__btn" type="button">Записаться</button>
+
           <div class="modal_photo__box">
             <div class="modal_decor__box"></div>
             <img src="./images/hero__x1.png" alt="декоративное изображение" />
@@ -116,7 +117,9 @@
             </li>
           </ul>
 
-          <button class="hero__btn" type="button">Записаться</button>
+          <button class="hero__btn" type="button" id="open-modal">
+            Записаться
+          </button>
         </div>
 
         <div class="hero_photo__box">
@@ -497,6 +500,115 @@
         </ul>
       </div>
     </section>
+    <section class="reserve">
+      <div class="container">
+        <div class="reserve__decor">
+          <span class="reserve__word--first">Записаться</span>
+          <span class="reserve__word--second">на консультацию</span>
+        </div>
+        <div class="reserve__box">
+          <form action="#" method="post" class="reserve__form">
+            <div class="reserve__field">
+              <input
+                type="text"
+                id="reserve-name"
+                name="name"
+                class="reserve__input"
+                placeholder="Full name / Ф.И.О"
+                required
+              /><label for="reserve-name" class="reserve__label"
+                >Full name / Ф.И.О</label
+              >
+            </div>
+
+            <div class="reserve__field">
+              <input
+                type="email"
+                id="reserve-email"
+                name="email"
+                class="reserve__input"
+                placeholder="Email"
+                required
+              />
+              <label for="reserve-email" class="reserve__label">E-mail</label>
+            </div>
+
+            <div class="reserve__field">
+              <input
+                type="tel"
+                id="reserve-phone"
+                name="phone"
+                class="reserve__input"
+                placeholder="Number of phone / Номер телефона"
+              />
+              <label for="reserve-phone" class="reserve__label"
+                >Number of phone / Номер телефона</label
+              >
+            </div>
+
+            <button type="submit" class="reserve__btn">Записаться</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <a href="./index.html" class="footer__brand">Dr. Juliya Yarosh</a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="footer__link">Обо мне</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Консультация</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Гайды</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg
+                class="footer__social-icon"
+                aria-hidden="true"
+                width="40px"
+                height="40px"
+              >
+                <use href="images/sprite.svg#icon-inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="TikTok">
+              <svg
+                class="footer__social-icon"
+                aria-hidden="true"
+                width="40px"
+                height="40px"
+              >
+                <use href="images/sprite.svg#icon-tiktok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="Telegram">
+              <svg
+                class="footer__social-icon"
+                aria-hidden="true"
+                width="40px"
+                height="40px"
+              >
+                <use href="images/sprite.svg#icon-teleg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <script src="./js/open-mob-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -136,6 +136,29 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--beige-color);
+
+  @media screen and (min-width: 1440px) {
+    width: 245px;
+    height: 47px;
+    font-size: 24px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--beige-color); // цвет линий при наведении
+    background-color: var(--green-color); // цвет линий при наведении
+  }
+}
+
+.reserve__btn {
+  display: block;
+  width: 226px;
+  height: 51px;
+  gap: 10px;
+  border: 0;
+  background-color: var(--black-color);
+  color: var(--beige-color);
+  margin: 0 auto;
+  margin-top: 50px;
   &:hover,
   &:focus {
     color: var(--beige-color); // цвет линий при наведении
