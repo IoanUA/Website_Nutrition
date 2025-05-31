@@ -1,0 +1,56 @@
+/* Скрытие модалки по умолчанию */
+.hidden {
+  display: none;
+}
+
+/* Затемнённый фон и позиционирование модалки */
+.modal-overlay {
+  position: fixed;
+  inset: 0; /* top: 0; right: 0; bottom: 0; left: 0; */
+  background-color: rgba(0, 0, 0, 0.5); /* тёмный полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Контент модалки */
+.consult-modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Кнопка закрытия (крестик) */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
