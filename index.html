@@ -36,8 +36,46 @@
               </li>
             </ul>
           </nav>
+          <ul class="header__social-list">
+            <li class="header__social-item">
+              <a href="#" class="header__social-link" aria-label="Instagram">
+                <svg
+                  class="header__social-icon"
+                  aria-hidden="true"
+                  width="19.34px"
+                  height="18.92px"
+                >
+                  <use href="images/sprite.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a href="#" class="header__social-link" aria-label="TikTok">
+                <svg
+                  class="header__social-icon"
+                  aria-hidden="true"
+                  width="15.13px"
+                  height="17.47px"
+                >
+                  <use href="images/sprite.svg#icon-tiktok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a href="#" class="header__social-link" aria-label="Telegram">
+                <svg
+                  class="header__social-icon"
+                  aria-hidden="true"
+                  width="20.6px"
+                  height="17.5px"
+                >
+                  <use href="images/sprite.svg#icon-teleg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
 
-          <button class="head_connect__btn" type="button">Записаться</button>
+          <!-- <button class="head_connect__btn" type="button">Записаться</button> -->
 
           <button
             class="mob-menu_open"
@@ -117,7 +155,11 @@
             </li>
           </ul>
 
-          <button class="hero__btn" type="button" id="open-modal">
+          <button
+            class="hero__btn"
+            type="button"
+            data-modal-open="hero-modal-open"
+          >
             Записаться
           </button>
         </div>

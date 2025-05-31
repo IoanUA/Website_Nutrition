@@ -1,10 +1,60 @@
-<!-- modal.html -->
-<div id="modal-overlay" class="modal-overlay hidden">
-  <div id="modal-window" class="modal-window">
-    <button id="modal-close" class="modal-close">&times;</button>
-    <div class="modal-content">
-      <h2>Заголовок модального окна</h2>
-      <p>Содержимое модального окна...</p>
-    </div>
+<!-- Кнопки на основной странице -->
+<!-- <button data-modal-open="modal1">Открыть модалку 1</button> -->
+<button data-modal-open="modal2">Открыть модалку 2</button>
+
+<!-- Модальное окно 1 -->
+<div id="hero-modal-open" class="modal-overlay hidden">
+  <div class="modal-hero-content">
+    <button data-modal-close class="modal-close">×</button>
+    <form action="#" method="post" class="hero__form">
+      <div class="hero__form-field">
+        <input
+          type="text"
+          id="hero-name"
+          name="name"
+          class="hero__form-input"
+          placeholder="Full name / Ф.И.О"
+          required
+        />
+        <label for="hero-name" class="hero__form-label"
+          >Full name / Ф.И.О</label
+        >
+      </div>
+
+      <div class="hero__form-field">
+        <input
+          type="email"
+          id="hero-email"
+          name="email"
+          class="hero__form-input"
+          placeholder="Email"
+          required
+        />
+        <label for="hero-email" class="hero__form-label">E-mail</label>
+      </div>
+
+      <div class="hero__form-field">
+        <input
+          type="tel"
+          id="hero-phone"
+          name="phone"
+          class="hero__form-input"
+          placeholder="Number of phone / Номер телефона"
+        />
+        <label for="hero-phone" class="hero__form-label">
+          Number of phone / Номер телефона
+        </label>
+      </div>
+
+      <button type="submit" class="hero__form-btn">Записаться</button>
+    </form>
+  </div>
+</div>
+
+<!-- Модальное окно 2 -->
+<div id="modal2" class="modal-overlay hidden">
+  <div class="modal-content">
+    <button data-modal-close class="modal-close">×</button>
+    <p>А это вторая модалка</p>
   </div>
 </div>

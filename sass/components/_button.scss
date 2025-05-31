@@ -22,25 +22,25 @@
   }
 }
 
-.head_connect__btn {
-  border: 1px solid var(--black-color);
-  padding: 5px 15px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  background-image: url(../../images/background__img.png);
-  background-color: var(--beige-color);
-  color: var(--black-color);
-  &:hover,
-  &:focus {
-    color: var(--green-color); // цвет линий при наведении
-    border: solid 1px var(--green-color);
-  }
-  @media screen and (max-width: 768px) {
-    display: none; // цвет линий при наведении
-  }
-}
+// .head_connect__btn {
+//   border: 1px solid var(--black-color);
+//   padding: 5px 15px;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 100%;
+//   letter-spacing: 0%;
+//   background-image: url(../../images/background__img.png);
+//   background-color: var(--beige-color);
+//   color: var(--black-color);
+//   &:hover,
+//   &:focus {
+//     color: var(--green-color); // цвет линий при наведении
+//     border: solid 1px var(--green-color);
+//   }
+//   @media screen and (max-width: 768px) {
+//     display: none; // цвет линий при наведении
+//   }
+// }
 .hero__btn {
   display: block;
   margin: 0 auto 47px auto;

@@ -83,6 +83,49 @@
   transform: translateY(-2px);
 }
 
+.header__social-list {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .header__social-list {
+    display: none;
+  }
+}
+
+.header__social-link {
+  display: flex;
+  border: 2px solid var(--black-color);
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  transition: color 0.3s ease, fill 0.3s ease;
+}
+.header__social-link:hover, .header__social-link:focus {
+  fill: var(--green-color);
+  border-color: var(--green-color);
+}
+.header__social-link:hover .header__social-icon, .header__social-link:focus .header__social-icon {
+  color: var(--green-color);
+}
+
+.header__social-icon {
+  color: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  transition: fill 0.3s ease-in-out;
+}
+.header__social-icon :hover,
+.header__social-icon :focus {
+  fill: var(--green-color);
+}
+
 * {
   box-sizing: border-box;
   line-height: 100%;
@@ -166,27 +209,6 @@ button {
 }
 .mob-menu_open :active {
   color: blue;
-}
-
-.head_connect__btn {
-  border: 1px solid var(--black-color);
-  padding: 5px 15px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  background-image: url(../../images/background__img.png);
-  background-color: var(--beige-color);
-  color: var(--black-color);
-}
-.head_connect__btn:hover, .head_connect__btn:focus {
-  color: var(--green-color);
-  border: solid 1px var(--green-color);
-}
-@media screen and (max-width: 768px) {
-  .head_connect__btn {
-    display: none;
-  }
 }
 
 .hero__btn {
@@ -1745,39 +1767,100 @@ button {
 }
 
 .hidden {
-  display: none !important;
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 1000;
+  align-items: center;
+  z-index: 999;
 }
 
-.modal-window {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  max-width: 500px;
-  width: 90%;
+.modal-hero-content {
+  background-image: url("../../images/background__img.png");
+  background-repeat: repeat;
+  background-color: var(--beige-color);
+  padding: 4rem;
+  border-radius: 8px;
   position: relative;
+  max-width: 600px;
+  width: 90%;
 }
 
 .modal-close {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background: transparent;
-  border: none;
+  top: 1rem;
+  right: 1rem;
   font-size: 1.5rem;
+  background: none;
+  border: none;
   cursor: pointer;
+}
+
+.hero__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero__form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__form-input {
+  padding-left: 0;
+  background-image: url("../../images/background__img.png");
+  background-repeat: repeat;
+  background-color: var(--beige-color);
+  border: none;
+  border-bottom: 1px solid var(--black-color);
+}
+.hero__form-input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--black-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero__form-btn {
+  display: block;
+  margin: 50px auto 0px auto;
+  width: 231px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--beige-color);
+  background-image: url(../../images/background__img.png);
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: var(--green-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border: 0;
+}
+.hero__form-btn:hover, .hero__form-btn:focus {
+  background-color: var(--black-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__form-btn {
+    width: 250px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__form-btn {
+    width: 320px;
+    height: 68px;
+  }
 }
 
 .mobail-modal {

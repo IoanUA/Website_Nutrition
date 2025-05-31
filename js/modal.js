@@ -1,38 +1,57 @@
 "use strict";
 
-// modal.js
 document.addEventListener('DOMContentLoaded', () => {
-    // 1) создаём контейнер и загружаем туда разметку
-    const container = document.createElement('div');
-    document.body.appendChild(container);
-  
-    fetch('modal.html')
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.text();
-      })
-      .then(html => {
-        container.innerHTML = html;
-        setupModal();
-      })
-      .catch(err => console.error('Ошибка загрузки modal.html:', err));
-  
-    // 2) вешаем обработчики открытия/закрытия
-    function setupModal() {
-      const overlay = document.getElementById('modal-overlay');
-      const openBtn = document.getElementById('open-modal');
-      const closeBtn = document.getElementById('modal-close');
-  
-      if (!overlay || !openBtn || !closeBtn) {
-        console.error('Элементы модалки не найдены');
-        return;
+  // Загружаем разметку модалок из внешнего файла
+  fetch('modal.html')
+    .then(res => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.text();
+    })
+    .then(html => {
+      const container = document.createElement('div');
+      container.innerHTML = html;
+      document.body.appendChild(container);
+      setupModals(); // Инициализируем модалки после вставки
+    })
+    .catch(err => console.error('Ошибка загрузки modal.html:', err));
+
+  function setupModals() {
+    const openButtons = document.querySelectorAll('[data-modal-open]');
+    const closeButtons = document.querySelectorAll('[data-modal-close]');
+    const overlays = document.querySelectorAll('.modal-overlay');
+
+    // Обработка открытия
+    openButtons.forEach(button => {
+      const modalId = button.getAttribute('data-modal-open');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        button.addEventListener('click', () => {
+          modal.classList.remove('hidden');
+          document.body.classList.add('no-scroll'); // блокируем прокрутку
+        });
       }
-  
-      openBtn.addEventListener('click', () => overlay.classList.remove('hidden'));
-      closeBtn.addEventListener('click', () => overlay.classList.add('hidden'));
-      overlay.addEventListener('click', e => {
-        if (e.target === overlay) overlay.classList.add('hidden');
+    });
+
+    // Обработка закрытия по кнопке
+    closeButtons.forEach(button => {
+      const modal = button.closest('.modal-overlay');
+      if (modal) {
+        button.addEventListener('click', () => {
+          modal.classList.add('hidden');
+          document.body.classList.remove('no-scroll');
+        });
+      }
+    });
+
+    // Обработка закрытия по клику вне модального окна
+    overlays.forEach(modal => {
+      modal.addEventListener('click', e => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          document.body.classList.remove('no-scroll');
+        }
       });
-    }
-  });
+    });
+  }
+});
   
