@@ -122,7 +122,15 @@
     background-color: var(--black-color); // цвет линий при наведении
   }
   @media screen and (min-width: 768px) {
-    display: none;
+    margin-right: 0;
+    gap: 10px;
+    border: none;
+    &:hover,
+    &:focus {
+      transform: translateX(4px);
+      color: var(--green-color); // цвет линий при наведении
+      background-color: var(--beige-color); // цвет линий при наведении
+    }
   }
 }
 .guide__btn {
