@@ -5,7 +5,16 @@
 <!-- Модальное окно 1 -->
 <div id="hero-modal-open" class="modal-overlay hidden">
   <div class="modal-hero-content">
-    <button data-modal-close class="modal-close">×</button>
+    <button
+      data-modal-close
+      class="hero-modal-close"
+      type="button"
+      aria-label="Закрыть меню"
+    >
+      <svg class="icon icon-close">
+        <use xlink:href="./images/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
     <form action="#" method="post" class="hero__form">
       <div class="hero__form-field">
         <input
