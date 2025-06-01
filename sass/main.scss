@@ -1,6 +1,7 @@
 @import "./utils/vars";
 @import "./layout/header";
 @import "./base/reset";
+@import "./base/modal-settings";
 @import "./components/button";
 @import "./layout/hero";
 @import "./utils/mixin";
@@ -9,12 +10,12 @@
 @import "./layout/about.scss";
 @import "./layout/approach";
 @import "./layout/consult";
-@import "./layout/consult-modal";
+@import "./modal/consult-modal";
 @import "./layout/facts";
 @import "./layout/guide";
 @import "./layout/reserve";
 @import "./layout/footer";
 
-@import "./layout/hero-modal";
+@import "./modal/hero-modal";
 
-@import "./layout/mobail-modal";
+@import "./modal/mobail-modal";
