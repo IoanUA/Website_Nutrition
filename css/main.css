@@ -204,6 +204,16 @@ button {
   z-index: 999;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .mob-menu_open {
   position: relative;
   display: flex;
@@ -1293,10 +1303,17 @@ button {
   background-repeat: repeat;
   background-color: var(--beige-color);
 }
+@media screen and (min-width: 768px) {
+  .consult-modal-content {
+    max-width: 100%;
+    width: 60%;
+    padding: 150px 100px 200px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .consult-modal-content {
-    padding: 60px 50px 225px;
-    width: 100%;
+    padding: 190px 143px 225px;
+    width: 60%;
     max-width: 100%;
   }
 }
@@ -1304,7 +1321,6 @@ button {
 /* Кнопка закрытия (крестик) */
 .modal-close {
   position: absolute;
-  top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
   background: none;
@@ -1319,16 +1335,6 @@ button {
 }
 
 /* Анимация появления */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .modal-consult__decor {
   display: flex;
   flex-direction: column;
@@ -1353,12 +1359,13 @@ button {
   padding: 17px 10px 40px;
   border: 1px solid var(--black-color);
 }
+
 @media screen and (min-width: 768px) {
-  .modal-consult__body {
-    max-width: 1150px;
+  .consult-modal-grid {
+    display: flex;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
