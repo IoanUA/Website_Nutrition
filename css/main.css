@@ -362,6 +362,25 @@ button {
   background-color: var(--green-color);
 }
 
+.modal-consult__button {
+  display: block;
+  width: 226px;
+  height: 51px;
+  gap: 10px;
+  border: 0;
+  background-color: var(--black-color);
+  color: var(--beige-color);
+  margin: 0 auto;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+}
+.modal-consult__button:hover, .modal-consult__button:focus {
+  color: var(--beige-color);
+  background-color: var(--green-color);
+}
+
 .hero {
   z-index: 0;
   position: relative;
@@ -1264,21 +1283,22 @@ button {
 
 /* Контент модалки */
 .consult-modal-content {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 500px;
+  max-width: 420px;
   width: 90%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   position: relative;
   animation: fadeIn 0.3s ease-out;
-}
-
-.consult-modal-content {
   padding: 20px 15px;
   background-image: url("../../images/background__img.png");
   background-repeat: repeat;
   background-color: var(--beige-color);
+}
+@media screen and (min-width: 1440px) {
+  .consult-modal-content {
+    padding: 60px 50px 225px;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Кнопка закрытия (крестик) */
@@ -1333,6 +1353,14 @@ button {
   padding: 17px 10px 40px;
   border: 1px solid var(--black-color);
 }
+@media screen and (min-width: 768px) {
+  .modal-consult__body {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .modal-consult__title {
   font-weight: 500;
@@ -1358,6 +1386,29 @@ button {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+}
+
+.modal-consult__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-consult__duration {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-consult__price {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.modal-consult__note {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .facts {

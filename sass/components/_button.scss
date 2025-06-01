@@ -173,3 +173,23 @@
     background-color: var(--green-color); // цвет линий при наведении
   }
 }
+.modal-consult__button {
+  display: block;
+  width: 226px;
+  height: 51px;
+  gap: 10px;
+  border: 0;
+  background-color: var(--black-color);
+  color: var(--beige-color);
+  margin: 0 auto;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+
+  &:hover,
+  &:focus {
+    color: var(--beige-color); // цвет линий при наведении
+    background-color: var(--green-color); // цвет линий при наведении
+  }
+}
