@@ -54,10 +54,40 @@
   font-weight: 900;
   font-size: 40px;
   line-height: 34px;
+  margin-bottom: 7px;
 }
 .modal-consult__word--second {
   font-weight: 250;
   font-size: 40px;
   line-height: 34px;
   margin-left: 50px;
+  margin-bottom: 19px;
+}
+.modal-consult__body {
+  padding: 17px 10px 40px;
+  border: 1px solid var(--black-color);
+}
+.modal-consult__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.modal-consult__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+.modal-consult__list {
+  margin: 0 0 30px 10px;
+}
+.modal-consult__item {
+  list-style: disc;
+  // margin-left: 20px;
+  // margin: 0 0 20px 30px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
 }
