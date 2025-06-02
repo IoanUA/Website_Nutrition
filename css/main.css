@@ -1325,8 +1325,8 @@ button {
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  top: 0;
+  right: 0;
   border: 1px solid var(--black-color);
   background: none;
   transition: color 0.2s ease;
