@@ -3,7 +3,11 @@
   // max-width: 420px;
   width: 100%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  // position: relative;
+  position: relative;
+
+  max-height: 90vh;
+  overflow-y: auto;
+
   animation: fadeIn 0.3s ease-out;
   padding: 20px 15px;
   background-image: url("../../images/background__img.png");
@@ -20,20 +24,21 @@
 }
 
 /* Кнопка закрытия (крестик) */
-.modal-close {
+.consulr-modal-close-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   position: absolute;
-
-  right: 1rem;
-  font-size: 1.5rem;
+  right: 0px;
+  top: 0px;
+  border: 1px solid var(--black-color);
   background: none;
-  border: none;
-  color: #333;
-  cursor: pointer;
   transition: color 0.2s ease;
-}
-
-.modal-close:hover {
-  color: #000;
+  &:hover,
+  &:focus {
+    color: var(--green-color);
+    border-color: var(--green-color);
+  }
 }
 
 /* Анимация появления */
