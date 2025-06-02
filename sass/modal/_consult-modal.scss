@@ -29,6 +29,7 @@
   justify-content: flex-end;
   align-items: center;
   position: absolute;
+
   right: 0px;
   top: 0px;
   border: 1px solid var(--black-color);
@@ -46,6 +47,7 @@
 .modal-consult__decor {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .modal-consult__word--first {
   font-weight: 900;
@@ -141,6 +143,7 @@
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 30px;
+  line-height: 20px;
   @media screen and (min-width: 1440px) {
     font-size: 22px;
     line-height: 30px;
