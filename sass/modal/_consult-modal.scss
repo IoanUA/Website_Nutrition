@@ -11,13 +11,11 @@
   background-color: var(--beige-color);
   @media screen and (min-width: 768px) {
     max-width: 100%;
-    width: 60%;
+    width: 100%;
     padding: 150px 100px 200px;
   }
   @media screen and (min-width: 1440px) {
     padding: 190px 143px 225px;
-    width: 60%;
-    max-width: 100%;
   }
 }
 
@@ -67,11 +65,8 @@
 }
 .consult-modal-grid {
   @media screen and (min-width: 768px) {
-    display: flex;
-
-    margin: 0 auto;
-    flex-direction: column;
-    flex-wrap: wrap;
+    columns: 2;
+    // margin: 0 auto;
   }
 }
 .modal-consult__title {

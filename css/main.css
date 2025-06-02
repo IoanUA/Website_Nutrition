@@ -1306,15 +1306,13 @@ button {
 @media screen and (min-width: 768px) {
   .consult-modal-content {
     max-width: 100%;
-    width: 60%;
+    width: 100%;
     padding: 150px 100px 200px;
   }
 }
 @media screen and (min-width: 1440px) {
   .consult-modal-content {
     padding: 190px 143px 225px;
-    width: 60%;
-    max-width: 100%;
   }
 }
 
@@ -1362,10 +1360,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .consult-modal-grid {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    flex-wrap: wrap;
+    columns: 2;
   }
 }
 
