@@ -1298,7 +1298,7 @@ button {
   width: 100%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   position: relative;
-  max-height: 90vh;
+  max-height: 100vh;
   overflow-y: auto;
   animation: fadeIn 0.3s ease-out;
   padding: 20px 15px;
@@ -1334,6 +1334,13 @@ button {
 .consulr-modal-close-btn:hover, .consulr-modal-close-btn:focus {
   color: var(--green-color);
   border-color: var(--green-color);
+}
+
+.icon-close {
+  width: 20px;
+  height: 20px;
+  fill: var(--black-color);
+  transition: fill 0.2s ease;
 }
 
 /* Анимация появления */
@@ -1416,7 +1423,7 @@ button {
 @media screen and (min-width: 1440px) {
   .modal-consult__item {
     font-size: 20px;
-    line-height: 34px;
+    line-height: 30px;
   }
 }
 
@@ -1457,6 +1464,18 @@ button {
   .modal-consult__note {
     font-size: 22px;
     line-height: 30px;
+  }
+}
+
+.consult-modal-tittle-second {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .consult-modal-tittle-second {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 }
 
