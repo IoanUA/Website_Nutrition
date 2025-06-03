@@ -19,26 +19,32 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <!-- //---------------------------------HEADER---------------------------------------// -->
+
     <header class="header">
       <section class="header__box container">
         <div class="header__nav">
-          <a class="header__logo" href="#">Dr. Juliya Yarosh</a>
+          <a class="header__logo" href="index.html">Dr. Juliya Yarosh</a>
           <nav class="head_nav__box">
             <ul class="head_nav__list">
               <li class="head_nav__item">
-                <a href="#" class="head_nav__link">Обо мне</a>
+                <a href="#about" class="head_nav__link">Обо мне</a>
               </li>
               <li class="head_nav__item">
-                <a href="#" class="head_nav__link">Консультация</a>
+                <a href="#consultations" class="head_nav__link">Консультация</a>
               </li>
               <li class="head_nav__item">
-                <a href="#" class="head_nav__link">Гайды</a>
+                <a href="#guide" class="head_nav__link">Гайды</a>
               </li>
             </ul>
           </nav>
           <ul class="header__social-list">
             <li class="header__social-item">
-              <a href="#" class="header__social-link" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/doctor_yarosh_/"
+                class="header__social-link"
+                aria-label="Instagram"
+              >
                 <svg
                   class="header__social-icon"
                   aria-hidden="true"
@@ -50,7 +56,11 @@
               </a>
             </li>
             <li class="header__social-item">
-              <a href="#" class="header__social-link" aria-label="TikTok">
+              <a
+                href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40doctor_yarosh%3F_t%3DZM-8ubYddbWAmE%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAacITC94iQRXEQzxeRA97kBpelxv4eMO2J-zsUd6zx4lIU3GjJYIMD_TBPAXig_aem_CplkZVajd7XI1huyaJyQfA&e=AT0NS4tMxFSAGr3qHv80xpScRAwR2_LOnpsT8LHtYwN036jAX0Hakmu4lZyWSyOywp4Jw3R0TQHuRLt1Z8ziI_skFKwWQg9NacOROA"
+                class="header__social-link"
+                aria-label="TikTok"
+              >
                 <svg
                   class="header__social-icon"
                   aria-hidden="true"
@@ -62,7 +72,11 @@
               </a>
             </li>
             <li class="header__social-item">
-              <a href="#" class="header__social-link" aria-label="Telegram">
+              <a
+                href="https://t.me/yarosh09"
+                class="header__social-link"
+                aria-label="Telegram"
+              >
                 <svg
                   class="header__social-icon"
                   aria-hidden="true"
@@ -74,9 +88,7 @@
               </a>
             </li>
           </ul>
-
           <!-- <button class="head_connect__btn" type="button">Записаться</button> -->
-
           <button
             class="mob-menu_open"
             type="button"
@@ -97,7 +109,7 @@
 
         <div class="mobail-modal hidden container">
           <div class="modal__top">
-            <a class="modal__logo" href="#">Dr. Juliya Yarosh</a>
+            <a class="modal__logo" href="index.html">Dr. Juliya Yarosh</a>
             <button
               class="btn-menu_close"
               type="button"
@@ -111,15 +123,15 @@
 
           <ul class="modal__list">
             <li class="modal__item">
-              <a href="#">Обо мне</a>
+              <a href="#about">Обо мне</a>
               <span class="modal__num">01</span>
             </li>
             <li class="modal__item">
-              <a href="#">Консультация</a>
+              <a href="#consultations">Консультация</a>
               <span class="modal__num">02</span>
             </li>
             <li class="modal__item">
-              <a href="#">Гайды</a>
+              <a href="#guide">Гайды</a>
               <span class="modal__num">03</span>
             </li>
           </ul>
@@ -134,6 +146,7 @@
       </section>
     </header>
 
+    <!-- //---------------------------------HERO---------------------------------------// -->
     <section class="hero">
       <div class="container hero_box__desk">
         <div class="hero__info">
@@ -193,7 +206,9 @@
         </div>
       </div>
     </section>
-    <section class="about_mee__section">
+
+    <!-- //---------------------------------ABOUT---------------------------------------// -->
+    <section class="about_mee__section" id="about">
       <div class="container">
         <div class="about_mee_decor">
           <span class="about_span">Обо</span>
@@ -244,6 +259,8 @@
         </div>
       </div>
     </section>
+
+    <!-- //---------------------------------APPROACH---------------------------------------// -->
     <section class="approach">
       <div class="container">
         <div class="approach__decor">
@@ -284,7 +301,9 @@
         </div>
       </div>
     </section>
-    <section class="consult">
+
+    <!-- //-----------------------------CONSULTATIONS---------------------------------------// -->
+    <section class="consult" id="consultations">
       <div class="container">
         <div class="consult__decor">
           <span class="consult__word--first">Мои</span>
@@ -466,6 +485,8 @@
         </ul>
       </div>
     </section>
+
+    <!-- //---------------------------------FACTS---------------------------------------// -->
     <section class="facts">
       <div class="container">
         <div class="facts__decor">
@@ -554,7 +575,10 @@
         </ul>
       </div>
     </section>
-    <section class="guide">
+
+    <!-- //---------------------------------GUIDE---------------------------------------// -->
+
+    <section class="guide" id="guide">
       <div class="container">
         <div class="guide__decor">
           <span class="guide__word--first">Мои</span>
@@ -596,6 +620,8 @@
         </ul>
       </div>
     </section>
+
+    <!-- //---------------------------------RESERVE---------------------------------------// -->
     <section class="reserve">
       <div class="container">
         <div class="reserve__decor">
@@ -647,6 +673,8 @@
         </div>
       </div>
     </section>
+
+    <!-- //---------------------------------FOOTER---------------------------------------// -->
     <section class="footer">
       <div class="container">
         <a href="./index.html" class="footer__brand">Dr. Juliya Yarosh</a>
