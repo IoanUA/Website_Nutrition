@@ -1804,7 +1804,7 @@ button {
 .reserve {
   padding-top: 58px;
   padding-bottom: 179px;
-  background-image: url("../images/reserve-back-img.png");
+  background-image: url(../../images/reserve-back-img.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1857,7 +1857,6 @@ button {
 .reserve__box {
   padding: 60px 10px 57px;
   display: flex;
-  background-image: url("../../images/background__img.png");
   background-color: var(--beige-color);
   max-width: 360px;
   margin: 0 auto;
