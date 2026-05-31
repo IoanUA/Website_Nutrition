@@ -323,6 +323,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .consult__button {
+    font-size: 12px;
     margin-right: 0;
     gap: 10px;
     border: none;
@@ -905,11 +906,11 @@ button {
   }
 }
 @media screen and (min-width: 1440px) {
-  .about_list {
-    margin-right: 20px;
-  }
   .about_list li:not(:last-child) {
     margin-bottom: 50px;
+  }
+  .about_list {
+    margin-right: 20px;
   }
 }
 
@@ -1803,7 +1804,7 @@ button {
 .reserve {
   padding-top: 58px;
   padding-bottom: 179px;
-  background-image: url("../../images/reserve-back-img.png");
+  background-image: url("../images/reserve-back-img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
