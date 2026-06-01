@@ -1881,7 +1881,6 @@ button {
   margin: 0;
   width: 100%;
   border: 0;
-  background-image: url("../../images/background__img.png");
   background-color: var(--beige-color);
   border-bottom: 1px solid var(--black-color);
   font-weight: 400;
@@ -1982,6 +1981,18 @@ button {
 .footer__social-icon :hover,
 .footer__social-icon :focus {
   fill: var(--black-color);
+}
+
+.lit--scroll {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: transform 1000ms cubic-bezier(0.2, 0.9, 0.2, 1), opacity 1000ms ease;
+  will-change: transform, opacity;
+}
+
+.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .modal-hero-content {
